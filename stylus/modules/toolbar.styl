@@ -1,0 +1,22 @@
+.me-{$toolbar}{
+    width: 100%;
+    display: table;
+    margin-bottom: 45px;
+    
+    &__{
+        &{$toolbar-item}{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        &{$toolbar-action}{
+            float:right;
+        }
+        &{$toolbar-title}{            
+            font-size: $font-size-md;            
+        }
+    }
+    .me-{$button}{
+        margin-left: 6px;            
+        text-transform: none;    
+    }
+}

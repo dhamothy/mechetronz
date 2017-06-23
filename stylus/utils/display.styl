@@ -1,0 +1,85 @@
+//display
+.me-dis{
+    &--blk{
+        display: block;
+    }
+    &--in-blk{
+        display: inline-block;
+    }
+    &--tbl{
+        display: table;
+
+        &-row{
+            display: table-row;
+        }
+        &-cell{
+            display: table-cell;
+        }
+    }
+
+    //flex
+    &--fl{
+        &x-{
+            &flex{
+                display: flex;
+            }
+        }
+        //direction
+        &d-{
+            &row{
+                flex-direction: row;
+            }
+            &column{
+                flex-direction: column;
+            }
+        }
+        //wrap
+        &w-{
+            &wrap{
+                flex-wrap: wrap;
+            }
+            &nowrap{
+                flex-wrap: nowrap;
+            }
+        }
+        //justify - left & right
+        &j-{
+            &start{
+                justify-content: flex-start;
+            }
+            &center{
+                justify-content: center;
+            }
+            &end{
+                justify-content: flex-end;
+            }
+            &between{
+                justify-content: space-between;
+            }
+            &around{
+                justify-content: space-around;
+            }
+        }
+        //align - top & bottom
+        &a-{
+            &start{
+                align-items: flex-start;
+            }
+            &center{
+                align-items: center;
+            }
+            &base{
+                align-items: baseline;
+            }
+            &stretch{
+                align-items: stretch;
+            }
+            &end{
+                align-items: flex-end;
+            }
+        }
+    }
+    &--none{
+        display: none;
+    }
+}

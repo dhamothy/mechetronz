@@ -1,0 +1,60 @@
+.me-{$container}{
+    max-width: $container-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding
+    position: relative;
+    z-index: 89;
+    clearfix();
+}
+.me-{$section}{
+	position: relative;
+
+	&__{
+		&title{
+			text-transform: uppercase;
+			margin-bottom: 60px;
+			text-align: center;
+			font-size: $font_size_md;
+			letter-spacing: 6px;
+		}
+	}
+	&--{
+		&pull{
+			margin: -45px 0;
+			z-index: 20;
+		}
+		&push{
+			padding: 120px 0;
+			z-index: 18;
+		}
+		&img{
+			background-color: $color_black;
+			color: $color_white;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			background-size: cover;
+			display: block;
+			min-height: 80vh;
+
+			&:before{
+		        content: '';
+		        position: absolute;
+		        top: 0;
+		        bottom: 0;
+		        right: 0;
+		        left: 0;
+		        z-index: 19;
+		        background-color: rgba(0, 0, 0, .5);
+		        display: block;
+		    }
+		    
+		    .me-{$section}__title{
+		    	font-size: $font_size_lg;
+		    	margin-top: 20vh;		    	
+		    }
+		}
+	}
+}

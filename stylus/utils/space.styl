@@ -1,0 +1,52 @@
+//======================================================================================================
+// selectors - $selector,$side,$size
+// ma = margin align
+// pa = padding align
+//======================================================================================================
+
+$selectors = {
+    "mar": "margin",
+    "pad": "padding"
+}
+$sides = {
+    "u": "",
+    "t": "-top",
+    "r": "-right",
+    "b": "-bottom",
+    "l": "-left",
+    "x": "",    // left and right
+    "y": ""     // top and bottom
+}
+$sizes = {
+    "xl": 60px,
+    "lg": 45px,
+    "md": 36px,
+    "st": 24px,
+    "sm": 12px,
+    "xs": 6px,
+    "no": 0
+}
+
+for $selector, $prop in $selectors{
+    .me-{$selector}--{
+        for $side,$prop-side in $sides{
+            &{$side}-{
+                for $size,$val in $sizes{
+                    &{$size}{
+
+                        if ($side != x) and ($side != y){
+                            {$prop}{$prop-side}: $val;
+                        } else if $side == x{
+                            {$prop}-left: $val;
+                            {$prop}-right: $val;
+                        } else if $side == y{
+                            {$prop}-top: $val;
+                            {$prop}-bottom: $val;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
