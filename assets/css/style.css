@@ -311,7 +311,7 @@ a[href^="mailto"]:before {
   letter-spacing: 6px;
 }
 .me-section--pull {
-  margin: -45px 0;
+  margin: -60px 0;
   z-index: 20;
 }
 .me-section--push {
@@ -350,7 +350,7 @@ a[href^="mailto"]:before {
   left: 0;
   right: 0;
   z-index: 99;
-  color: rgba(255,255,255,0.85);
+  color: #fff;
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
@@ -407,24 +407,24 @@ a[href^="mailto"]:before {
 .me-header__nav [href^="mailto"]:before {
   opacity: 0.75;
 }
-.me-menu {
+.me-nav {
   display: inline-block;
   vertical-align: middle;
 }
-.me-menu >li {
+.me-nav >li {
   display: inline-block;
   vertical-align: top;
 }
-.me-menu >li >a {
+.me-nav >li >a {
   padding: 6px 15px;
 }
-.me-menu >li >a:hover {
+.me-nav >li >a:hover {
   color: #fff;
 }
-.me-menu__inner {
+.me-nav__inner {
   position: relative;
 }
-.me-menu__inner:after {
+.me-nav__inner:after {
   content: "";
   width: 0;
   height: 0;
@@ -435,7 +435,7 @@ a[href^="mailto"]:before {
   margin-left: -15px;
   vertical-align: middle;
 }
-.me-menu__inner ul {
+.me-nav__inner ul {
   display: none;
   position: absolute;
   left: 15px;
@@ -448,14 +448,14 @@ a[href^="mailto"]:before {
   border-radius: 2px;
   box-shadow: 0 2px 2px 2px rgba(0,0,0,0.12);
 }
-.me-menu__inner ul a {
+.me-nav__inner ul a {
   display: block;
   padding: 6px 12px;
 }
-.me-menu__inner ul a:hover {
+.me-nav__inner ul a:hover {
   background-color: #fde706;
 }
-.me-menu__inner:hover ul {
+.me-nav__inner:hover ul {
   display: inline-block;
 }
 .me-footer {
