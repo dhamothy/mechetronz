@@ -1,9 +1,9 @@
-$headings = 'h1' $font_size_h1 300 12px,
-            'h2' $font_size_h2 300 12px,
-            'h3' $font_size_h3 300 12px,
-            'h4' $font_size_h4 300 9px,
-            'h5' $font_size_h5 400 6px,
-            'h6' $font_size_h6 400 6px
+$headings = 'h1' $size_h1 $weight_light 12px,
+            'h2' $size_h2 $weight_light 12px,
+            'h3' $size_h3 $weight_light 12px,
+            'h4' $size_h4 $weight_light 9px,
+            'h5' $size_h5 $weight_normal 6px,
+            'h6' $size_h6 $weight_normal 6px
 
 for $value in $headings {
     {$value[0]}{
@@ -45,94 +45,21 @@ a {
     }
 }
 
-// Text-level semantics
-// ==========================================================================
-
-// 1. Remove the bottom border in Firefox 39-.
-// 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-
-abbr[title] {
-    border-bottom: none; // 1
-    text-decoration: underline; // 2
-    text-decoration: underline dotted; // 2
-}
-
-// Prevent the duplicate application of `bolder` by the next rule in Safari 6.
-
-b,
-strong {
-    font-weight: inherit;
-}
-
 // Add the correct font weight in Chrome, Edge, and Safari.
 
 b,
 strong {
-    font-weight: bolder;
-}
-
-// Add the correct font style in Android 4.3-.
-
-dfn {
-    font-style: italic;
-}
-
-// Add the correct background and color in IE 9-.
-
-mark {
-    background-color: #ff0;
-    color: #000;
+    font-weight: $weight_bold;
 }
 
 // Add the correct font size in all browsers.
 
 small {
-    font-size: $font_size_sm;
-}
-
-// Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-
-sub,
-sup {
-    font-size:  $font_size_xs;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-sup {
-    top: -0.5em;
+    font-size: $size_sm;
 }
 
 address{
     font-style: normal;
-}
-
-// Grouping content
-// ==========================================================================
-
-
-// 1. Correct the inheritance of font family in all browsers.
-
-code,
-kbd,
-pre,
-samp {
-    font-family: $font_family_monospace;// 1
-    //Override the twitter bootstarp framework style.
-    background-color: transparent;
-    padding: 0;
-    color: inherit;
-    border-width: 0;
-    border-radius: 0;
-    color: inherit;
-    margin: 0;
-    font-size: inherit;
-    line-height: inherit;
 }
 
 // Lists
@@ -150,7 +77,7 @@ dl{
 }
 
 dt{
-    font-weight: bold;
+    font-weight: $weight_bold;
 }
 
 // Table
@@ -181,11 +108,11 @@ textarea {
 // Restore the font weight unset by the previous rule.
 
 optgroup {
-    font-weight: bold;
+    font-weight: $weight_bold;
 }
 
 label{
-    font-weight: normal;
+    font-weight: $weight_normal;
     margin-bottom: 0;
 }
 
@@ -211,7 +138,7 @@ button,
 // Restore the default cursor to disabled elements unset by the previous rule.
 
 [disabled] {
-    cursor: default;
+    cursor: not-allowed;
 }
 
 // 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4.
@@ -239,21 +166,6 @@ input:-moz-focusring {
     outline: 1px dotted ButtonText;
 }
 
-// Change the border in all browsers (opinionated).
-
-fieldset {
-    border-width:0;
-}
-
-// 1. Correct the text wrapping in Edge and IE.
-// 2. Correct the color inheritance from `fieldset` elements in IE.
-
-legend {
-    color: inherit; // 2
-    display: table; // 1
-    max-width: 100%; // 1
-    white-space: normal; // 1
-}
 
 // Remove the default vertical scrollbar in IE.
 

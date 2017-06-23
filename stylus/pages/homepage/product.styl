@@ -1,7 +1,7 @@
 .me-{$product}{
 	&s{
 		background: $color_white;
-		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.24);
+		box-shadow: 1px 1px 4px rgba($color_black, 0.24);
 	    border-radius: 2px;
 
 	    & ul{
@@ -39,8 +39,8 @@
 		}
 		&title{
 			text-transform: uppercase;
-			font-size: $font_size_st;
-			font-weight: bold;
+			font-size: $size_st;
+			font-weight: $weight_bold;
 		}
 		&img{
 			flex: 1;
@@ -57,7 +57,7 @@
 				right: 0;
 				left: 0;
 				bottom: 0;
-				background-color: rgba(0, 0, 0, .2)
+				background-color: rgba($color_black, .2)
 			}
 		}
 		&list{
@@ -75,7 +75,7 @@
 			content: '';
 			display: block;
 			box(100%,1px);
-			border-bottom: 1px dashed rgba(0,0,0,.15);
+			border-bottom: 1px dashed rgba($color_black,.15);
 			position: absolute;
 			top: 0;
 			bottom: 0;

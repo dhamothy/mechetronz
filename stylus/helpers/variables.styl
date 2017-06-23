@@ -1,143 +1,62 @@
 //------------------------------------------------------------------------------
-//  alpha
-//------------------------------------------------------------------------------
-$alpha_1                          = .87
-$alpha_2                          = .54
-$alpha_3                          = .36
-
-//------------------------------------------------------------------------------
 //  color
 //------------------------------------------------------------------------------
-$color_base                      = #222222    //black
-$color_white                      = #ffffff    //white
-$color_primary                    = #2d8e7e    //green
-$color_accent                     = #333333    //black
-$color_warn                       = #f7a400    //yellow
-$color_muted                      = #969696    //gray
-$color_brand                      = #fdb302    //yellow
+$color_white                   	= #ffffff    //white
+$color_black                   	= #000000    //black
+
+$color_base                    	= #222222    //black
+$color_muted                   	= #999999    //gray
+$color_brand                   	= #fdb302    //yellow
 
 //------------------------------------------------------------------------------
 //  hyperlink
 //------------------------------------------------------------------------------
-$link_color                       = #009dff    //blue
-$link_hover_color                 = darken($link_color, 5%)    //blue
+$link_color                    	= #fdb302    //blue
+$link_hover_color              	= darken($link_color, 5%)    //blue
 
 //------------------------------------------------------------------------------
 //  font-family
 //------------------------------------------------------------------------------
-$font_family_sans_serif           = -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Helvetica Neue, Helvetica, sans-serif
-$font_family_serif                = Georgia, Cambria, Times New Roman, Times, serif
-$font_family_monospace            = Menlo, Monaco, Consolas, Courier New, monospace
+$family_sans_serif          	= -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Helvetica Neue, Helvetica, sans-serif
+$family_serif               	= Georgia, Cambria, Times New Roman, Times, serif
+$family_monospace            	= Menlo, Monaco, Consolas, Courier New, monospace
 
 //------------------------------------------------------------------------------
 //  font-size
 //------------------------------------------------------------------------------
-$font_size_xs                     = 10px
-$font_size_sm                     = 12px
-$font_size_st                     = 14px
-$font_size_md                     = 24px
-$font_size_lg                     = 32px
-$font_size_xl                     = 45px
+$size_xs                     	= 10px
+$size_sm                     	= 12px
+$size_st                     	= 14px
+$size_md                    	= 24px
+$size_lg                     	= 32px
+$size_xl                     	= 45px
+
+//------------------------------------------------------------------------------
+//  font-weight
+//------------------------------------------------------------------------------
+$weight_light					= 300;
+$weight_normal					= 500;
+$weight_bold					= 600;
+$weight_bolder					= 700;
 
 //------------------------------------------------------------------------------
 //  heading
 //------------------------------------------------------------------------------
 //font-size
-$font_size_h1                     = $font_size_xl
-$font_size_h2                     = $font_size_lg
-$font_size_h3                     = $font_size_md
-$font_size_h4                     = $font_size_st
-$font_size_h5                     = $font_size_sm
-$font_size_h6                     = $font_size_xs
+$size_h1                     	= $size_xl
+$size_h2                     	= $size_lg
+$size_h3                     	= $size_md
+$size_h4                     	= $size_st
+$size_h5                     	= $size_sm
+$size_h6                     	= $size_xs
 
 //------------------------------------------------------------------------------
 //  base
 //------------------------------------------------------------------------------
-$font_family_base                 = $font_family_sans_serif
-$font_size_base                   = $font_size_st
-$line_height_base                 = 1.4
-$text_color_base                  = $color_base
+$base_family                   	= $family_sans_serif
+$base_size                     	= $size_st
+$base_line_height              	= 1.4
 
-//------------------------------------------------------------------------------
-//  form fields
-//------------------------------------------------------------------------------
-//lable
-$form_label_color                 = $color_muted
-$form_label_font_size             = $font_size_st
-
-//control
-$form_control_color               = $color_base
-$form_control_border              = #161d20
-$form_control_bg                  = $color_white
-$form_control_font_size           = $font_size_st
-$form_control_shadow              = inset 1px 1px 3px rgba(0, 0, 0, 0.22)
-$form_control_border_focus        = #1E8CE6
-$form_control_shadow_focus        = 2px -2px 2px 0 rgba(30,139,230,0.18), -2px 2px 2px 0 rgba(30,139,230,0.18)
-$form_control_shadow_invalid      = 2px -2px 2px 0 rgba(250,97,100,0.18), -2px 2px 2px 0 rgba(250,97,100,0.18)
-
-//height
-$form_control_height              = 42px
-
-//validation
-$form_valid_color                 = #00B200        //green
-$form_invalid_color               = $color_warn    //red
-$form_error_color                 = $color_warn
-
-//help
-$form_help_color                  = $color_muted
-
-//------------------------------------------------------------------------------
-//  button
-//------------------------------------------------------------------------------
-//text color
-$btn_color_black                  = $color_base
-$btn_color_white                  = $color_white
-$btn_color_primary                = $color_primary
-$btn_color_accent                 = $color_accent
-$btn_color_brand                  = $color_brand
-$btn_color_warn                   = $color_warn
-$btn_color_muted                  = $color_muted
-
-//background color
-$btn_bg_black                     = $color_base
-$btn_bg_white                     = $color_white
-$btn_bg_primary                   = $color_primary
-$btn_bg_accent                    = $color_accent
-$btn_bg_brand                     = $color_brand
-$btn_bg_warn                      = $color_warn
-$btn_bg_muted                     = $color_muted
-
-//font-size
-$btn_font_size                    = 14px
-$btn_font_size_lg                 = 16px
-
-//height
-$btn_height                       = 42px
-
-//shadow
-$btn_shadow_dp1                   = 0 2px 2px rgba($color_base, .12)
-
-//------------------------------------------------------------------------------
-//  border
-//------------------------------------------------------------------------------
-$border_black                     = #000000
-//
-$border_color_base                = rgba($border_black, .12)
-$border_color_light               = rgba($border_black, .08)
-
-//------------------------------------------------------------------------------
-//  shadow depth
-//------------------------------------------------------------------------------
-$shadow_color_1                   = #C8D0DC    //light blueish gray
-$shadow_color_2                   = rgba(116, 125, 147, 0.4)   //dark blueish gray
-//
-$shadow_dp2                       = 0 0 2px $shadow_color_1, 0 2px 2px $shadow_color_2
-$shadow_dp3                       = 0 0 2px $shadow_color_1, 0 0 8px $shadow_color_2
-$shadow_dp4                       = 0 0 2px $shadow_color_1, 0 0 8px $shadow_color_2, 0 8px 8px $shadow_color_2
-
-//------------------------------------------------------------------------------
-//  paper
-//------------------------------------------------------------------------------
-$paper_radius                     = 2px
-$paper_shadow                     = $shadow_dp2
-
+//colors
+$base_text                     	= $color_base
+$base_fill                     	= $color_white

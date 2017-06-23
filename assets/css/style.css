@@ -62,7 +62,7 @@ iframe {
 hr {
   border-width: 0;
   height: 1px;
-  background-color: rgba(0,0,0,0.12);
+  background-color: $border_color_base;
   overflow: visible;
 }
 h1 {
@@ -91,13 +91,13 @@ h4 {
 }
 h5 {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 6px;
   margin-top: 0;
 }
 h6 {
   font-size: 10px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 6px;
   margin-top: 0;
 }
@@ -115,66 +115,22 @@ p:not(:last-child) {
 a {
   background-color: transparent;
   cursor: pointer;
-  color: #009dff;
+  color: #fdb302;
   text-decoration: none;
 }
 a:active,
 a:hover {
-  color: #0095f2;
-}
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
+  color: #f0aa02;
 }
 b,
 strong {
-  font-weight: inherit;
-}
-b,
-strong {
-  font-weight: bolder;
-}
-dfn {
-  font-style: italic;
-}
-mark {
-  background-color: #ff0;
-  color: #000;
+  font-weight: 600;
 }
 small {
   font-size: 12px;
 }
-sub,
-sup {
-  font-size: 10px;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sub {
-  bottom: -0.25em;
-}
-sup {
-  top: -0.5em;
-}
 address {
   font-style: normal;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: Menlo, Monaco, Consolas, Courier New, monospace;
-  background-color: transparent;
-  padding: 0;
-  color: inherit;
-  border-width: 0;
-  border-radius: 0;
-  color: inherit;
-  margin: 0;
-  font-size: inherit;
-  line-height: inherit;
 }
 ul,
 ol {
@@ -186,7 +142,7 @@ dl {
   margin: 0;
 }
 dt {
-  font-weight: bold;
+  font-weight: 600;
 }
 table {
   border-collapse: collapse;
@@ -203,10 +159,10 @@ textarea {
   font: inherit;
 }
 optgroup {
-  font-weight: bold;
+  font-weight: 600;
 }
 label {
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 0;
 }
 button,
@@ -221,7 +177,7 @@ button,
   cursor: pointer;
 }
 [disabled] {
-  cursor: default;
+  cursor: not-allowed;
 }
 button,
 html [type="button"],
@@ -238,15 +194,6 @@ button:-moz-focusring,
 input:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-fieldset {
-  border-width: 0;
-}
-legend {
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  white-space: normal;
-}
 textarea {
   overflow: auto;
   resize: vertical;
@@ -262,7 +209,7 @@ textarea {
 .me-hr {
   border-width: 0;
   height: 1px;
-  background-color: rgba(0,0,0,0.12);
+  background-color: $border_color_base;
   overflow: visible;
 }
 a[href^="tel"],
@@ -515,7 +462,7 @@ a[href^="mailto"]:before {
 }
 .me-footer address {
   position: relative;
-  line-height: 24px;
+  line-height: 1.8;
 }
 .me-footer address:before {
   content: "";
@@ -565,14 +512,11 @@ a[href^="mailto"]:before {
 }
 .me-banner__title {
   font-size: 72px;
-  line-height: 84px;
-  margin-bottom: 30px !important;
   font-weight: 600;
 }
 .me-banner__quote {
   font-size: 32px;
-  line-height: 38px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 300;
   position: relative;
 }
@@ -581,7 +525,7 @@ a[href^="mailto"]:before {
   display: block;
   position: absolute;
   right: 100%;
-  top: 18px;
+  top: 21px;
   margin-right: 9px;
   width: 30px;
   height: 2px;
@@ -643,7 +587,7 @@ a[href^="mailto"]:before {
 .me-product__title {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .me-product__img {
   -webkit-box-flex: 1;
@@ -676,7 +620,7 @@ a[href^="mailto"]:before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 12px;
-  color: #969696;
+  color: #999;
   position: relative;
 }
 .me-product__item:after {
