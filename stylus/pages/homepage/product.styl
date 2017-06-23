@@ -26,11 +26,12 @@
 		&content{
 			flex: 1;
 			min-height: 250px;
-			
+			position: relative;
+
 			>div{
 				padding: 30px;
 				text-align: center;
-				
+
 				+mq(gt-md){
 					padding: 45px;
 				}
@@ -47,7 +48,7 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
-			position: relative;			
+			position: relative;
 
 			&:after{
 				content: "";

@@ -553,7 +553,7 @@ a[href^="mailto"]:before {
   right: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(253,179,2,0.5);
+  background-color: rgba(253,179,2,0.6);
   display: block;
 }
 .me-banner__content {
@@ -631,6 +631,7 @@ a[href^="mailto"]:before {
       -ms-flex: 1;
           flex: 1;
   min-height: 250px;
+  position: relative;
 }
 .me-product__content >div {
   padding: 30px;
