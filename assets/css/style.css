@@ -390,7 +390,7 @@ a[href^="mailto"]:before {
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid;
+  border-top: 6px solid currentColor;
   display: inline-block;
   margin-left: -15px;
   vertical-align: middle;
@@ -541,11 +541,6 @@ a[href^="mailto"]:before {
 .me-banner a {
   color: inherit;
 }
-.me-product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .me-products {
   background: #fff;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.24);
@@ -569,6 +564,11 @@ a[href^="mailto"]:before {
             flex-direction: row-reverse;
   }
 }
+.me-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .me-product__content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -584,6 +584,35 @@ a[href^="mailto"]:before {
   .me-product__content >div {
     padding: 45px;
   }
+}
+.me-product__content:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
+  border-left: 21px solid #fff;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  z-index: 10;
+  margin: auto;
+}
+.me-product__content--alt:after {
+  border-left-width: 0;
+  left: auto;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
+  border-right: 21px solid #fff;
+}
+.me-product__arrow-left,
+.me-product__arrow-right {
+  position: relative;
 }
 .me-product__title {
   text-transform: uppercase;
@@ -613,10 +642,6 @@ a[href^="mailto"]:before {
   left: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.2);
-}
-.me-product__list {
-  max-width: 390px;
-  margin: 0 auto;
 }
 .me-product__item {
   display: -webkit-box;
@@ -654,4 +679,31 @@ a[href^="mailto"]:before {
   color: #222;
   padding-left: 12px;
   font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+}
+.me-product__table {
+  text-align: right;
+}
+.me-product__table ~ .me-product__table {
+  margin-top: 30px;
+}
+.me-product__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.me-product__row:first-child {
+  font-weight: 600;
+  border-bottom: 1px dashed rgba(0,0,0,0.15);
+}
+.me-product__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 3px 0;
+}
+.me-product__col:first-child {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  text-align: left;
 }
