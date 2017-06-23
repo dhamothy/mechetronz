@@ -383,6 +383,7 @@ a[href^="mailto"]:before {
 }
 .me-nav__inner {
   position: relative;
+  white-space: nowrap;
 }
 .me-nav__inner:after {
   content: "";
@@ -505,7 +506,7 @@ a[href^="mailto"]:before {
   display: block;
 }
 .me-banner__content {
-  padding: 240px 0 150px;
+  padding: 240px 0 180px;
   position: relative;
   z-index: 11;
   min-height: 500px;
