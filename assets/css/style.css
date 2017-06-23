@@ -274,14 +274,14 @@ a[href^="mailto"]:before {
   content: "";
   width: 12px;
   height: 12px;
-  background: url("../images/phone.svg") no-repeat center;
+  background: url("../images/icon/phone-white.svg") no-repeat center;
   background-size: contain;
   display: inline-block;
   vertical-align: middle;
   margin-right: 6px;
 }
 a[href^="mailto"]:before {
-  background: url("../images/mail.svg") no-repeat center;
+  background: url("../images/icon/mail-white.svg") no-repeat center;
 }
 .me-container {
   max-width: 1100px;
@@ -319,7 +319,7 @@ a[href^="mailto"]:before {
   z-index: 18;
 }
 .me-section--img {
-  background-color: #333;
+  background-color: #222;
   color: #fff;
   background-repeat: no-repeat;
   background-position: center;
@@ -350,7 +350,7 @@ a[href^="mailto"]:before {
   left: 0;
   right: 0;
   z-index: 99;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.85);
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
@@ -380,7 +380,7 @@ a[href^="mailto"]:before {
 .me-header__logo {
   width: 150px;
   height: 42px;
-  background: url("../images/mechetronz.svg") no-repeat;
+  background: url("../images/brand/mechetronz-white.svg") no-repeat;
   background-size: contain;
   overflow: hidden;
   text-indent: 100%;
@@ -443,7 +443,7 @@ a[href^="mailto"]:before {
   z-index: 111;
   padding: 3px 0;
   background: #fff;
-  color: #333;
+  color: #222;
   min-width: 120px;
   border-radius: 2px;
   box-shadow: 0 2px 2px 2px rgba(0,0,0,0.12);
@@ -462,9 +462,9 @@ a[href^="mailto"]:before {
   padding: 150px 0;
   font-size: 12px;
   position: relative;
-  background-color: #333;
+  background-color: #222;
   color: #fff;
-  background-image: url("../images/section-footer.jpg");
+  background-image: url("../images/wide/section-footer.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -512,14 +512,14 @@ a[href^="mailto"]:before {
   left: -24px;
   width: 18px;
   height: 18px;
-  background: url("../images/map.svg") no-repeat center;
+  background: url("../images/icon/map-white.svg") no-repeat center;
   background-size: contain;
 }
 .me-banner {
   min-height: 80vh;
   position: relative;
   z-index: 9;
-  background: #222 url("../images/banner.jpg") no-repeat;
+  background: #fdb302 url("../images/wide/banner.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -541,7 +541,7 @@ a[href^="mailto"]:before {
   right: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(253,179,2,0.5);
   display: block;
 }
 .me-banner__title {
@@ -627,7 +627,7 @@ a[href^="mailto"]:before {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #333;
+  background-color: #222;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
