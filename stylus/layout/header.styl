@@ -27,7 +27,7 @@
 			font-size: $font_size_md;
 			display: inline-block;
 			vertical-align: middle;
-			margin-right: 30px;
+			margin-right: 45px;
 			line-height: 0;
 		}
 		&logo{
@@ -40,16 +40,19 @@
 			//margin-bottom: -6px;
 		}
 		&container{
-			display: flex;
-			justify-content: space-between;
+			display: flex;			
 			align-items: center;
 		}
 		&nav{
+			display: flex;
+			flex: 1;
+			align-items: center;
+			justify-content: space-between;
+			
 			[href^="tel"],
 			[href^="mailto"]{
 				display: inline-block;
-				vertical-align: middle;
-				margin-left: 24px;
+				vertical-align: middle;				
 
 				&:before{
 					opacity: .75;

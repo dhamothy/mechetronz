@@ -374,7 +374,7 @@ a[href^="mailto"]:before {
   font-size: 24px;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 30px;
+  margin-right: 45px;
   line-height: 0;
 }
 .me-header__logo {
@@ -390,18 +390,28 @@ a[href^="mailto"]:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.me-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .me-header__nav [href^="tel"],
 .me-header__nav [href^="mailto"] {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 24px;
 }
 .me-header__nav [href^="tel"]:before,
 .me-header__nav [href^="mailto"]:before {
@@ -417,6 +427,8 @@ a[href^="mailto"]:before {
 }
 .me-nav >li >a {
   padding: 6px 15px;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 .me-nav >li >a:hover {
   color: #fff;
@@ -438,8 +450,8 @@ a[href^="mailto"]:before {
 .me-nav__inner ul {
   display: none;
   position: absolute;
-  left: 15px;
-  top: 24px;
+  top: 100%;
+  right: 3px;
   z-index: 111;
   padding: 3px 0;
   background: #fff;
@@ -516,14 +528,14 @@ a[href^="mailto"]:before {
   background-size: contain;
 }
 .me-banner {
-  min-height: 80vh;
+  min-height: 600px;
   position: relative;
   z-index: 9;
   background: #fdb302 url("../images/wide/banner.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff;
-  font-weight: 200;
+  font-weight: 300;
 }
 .me-banner:before,
 .me-banner:after {
@@ -544,10 +556,17 @@ a[href^="mailto"]:before {
   background-color: rgba(253,179,2,0.5);
   display: block;
 }
+.me-banner__content {
+  padding: 240px 0 150px;
+  position: relative;
+  z-index: 11;
+  min-height: 500px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
 .me-banner__title {
   font-size: 60px;
   line-height: 72px;
-  margin-bottom: 60px;
+  margin-bottom: 30px !important;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 12px;
@@ -556,21 +575,25 @@ a[href^="mailto"]:before {
   font-size: 32px;
   line-height: 38px;
   letter-spacing: 3px;
+  font-weight: 300;
+  position: relative;
 }
 .me-banner__quote:before {
   content: '';
   display: block;
-  margin: 0 auto 30px;
-  width: 60px;
+  position: absolute;
+  right: 100%;
+  top: 18px;
+  margin-right: 9px;
+  width: 30px;
   height: 2px;
-  background-color: #fff;
+  border-radius: 2px;
+  background-color: currentColor;
 }
-.me-banner__content {
-  padding: 240px 0 150px;
-  position: relative;
-  z-index: 11;
-  min-height: 500px;
-  text-align: center;
+.me-banner__launch {
+  font-size: 18px;
+  margin-top: 21px;
+  display: inline-block;
 }
 .me-banner a {
   color: inherit;
@@ -641,4 +664,44 @@ a[href^="mailto"]:before {
   left: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.2);
+}
+.me-product__list {
+  max-width: 390px;
+  margin: 0 auto;
+}
+.me-product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+  color: #969696;
+  position: relative;
+}
+.me-product__item:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed rgba(0,0,0,0.15);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+.me-product__label {
+  background-color: #fff;
+  z-index: 4;
+  padding-right: 12px;
+}
+.me-product__value {
+  background-color: #fff;
+  z-index: 4;
+  color: #222;
+  padding-left: 12px;
 }

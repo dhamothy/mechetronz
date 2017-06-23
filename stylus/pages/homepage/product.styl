@@ -59,5 +59,40 @@
 				background-color: rgba(0, 0, 0, .2)
 			}
 		}
+		&list{
+			max-width: 390px;
+			margin: 0 auto;
+		}
+		&item{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 12px;
+			color: $color_muted;
+			position: relative;
+		}
+		&item:after{
+			content: '';
+			display: block;
+			box(100%,1px);
+			border-bottom: 1px dashed rgba(0,0,0,.15);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			z-index: 1;
+		}
+		&label{
+			background-color: $color_white;
+			z-index: 4;
+			padding-right: 12px;
+		}
+		&value{
+			background-color: $color_white;
+			z-index: 4;
+			color: $color_black;
+			padding-left: 12px;
+		}
 	}
 }
