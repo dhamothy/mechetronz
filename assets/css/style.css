@@ -300,18 +300,19 @@ a[href^="mailto"]:before {
   color: #fff;
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
+  line-height: 54px;
 }
 @media (min-width: 1200px) {
   .me-header {
-    padding: 45px 60px;
+    padding: 39px 60px;
   }
 }
 @media (min-width: 768px) {
   .me-header--affix {
     position: fixed;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: #fdb302;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(253,179,2,0.92);
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
 }
@@ -319,20 +320,16 @@ a[href^="mailto"]:before {
   color: inherit;
 }
 .me-header__brand {
-  font-size: 24px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 45px;
-  line-height: 0;
+  font-size: 0;
+  margin-right: 30px;
 }
 .me-header__logo {
-  width: 150px;
-  height: 42px;
+  width: 144px;
+  height: 100%;
   background: url("../images/brand/mechetronz-white.svg") no-repeat;
   background-size: contain;
-  overflow: hidden;
-  text-indent: 100%;
-  display: inline-block;
+  background-position: center;
+  display: block;
 }
 .me-header__container {
   display: -webkit-box;
@@ -361,31 +358,21 @@ a[href^="mailto"]:before {
   display: inline-block;
   vertical-align: middle;
 }
-.me-header__nav [href^="tel"]:before,
-.me-header__nav [href^="mailto"]:before {
-  opacity: 0.75;
-}
-.me-nav {
-  display: inline-block;
-  vertical-align: middle;
-}
 .me-nav >li {
   display: inline-block;
   vertical-align: top;
 }
 .me-nav >li >a {
-  padding: 6px 15px;
+  padding: 0 9px;
   display: inline-block;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-.me-nav >li >a:hover {
   color: #fff;
 }
 .me-nav__inner {
   position: relative;
   white-space: nowrap;
 }
-.me-nav__inner:after {
+.me-nav__inner > a:after {
   content: "";
   width: 0;
   height: 0;
@@ -393,14 +380,14 @@ a[href^="mailto"]:before {
   border-right: 6px solid transparent;
   border-top: 6px solid currentColor;
   display: inline-block;
-  margin-left: -15px;
+  margin-left: 3px;
   vertical-align: middle;
 }
 .me-nav__inner ul {
   display: none;
   position: absolute;
   top: 100%;
-  right: 3px;
+  right: 9px;
   z-index: 111;
   padding: 3px 0;
   background: #fff;
@@ -408,6 +395,7 @@ a[href^="mailto"]:before {
   min-width: 120px;
   border-radius: 2px;
   box-shadow: 0 2px 2px 2px rgba(0,0,0,0.12);
+  line-height: 1.5;
 }
 .me-nav__inner ul a {
   display: block;

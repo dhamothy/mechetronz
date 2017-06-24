@@ -7,16 +7,17 @@
 	z-index: 99;
 	color: $color_white;
 	transition: .25s ease;
+	line-height: 54px;
 
 	+mq(gt-lg){
-		padding: 45px 60px;
+		padding: 39px 60px;
 	}
 	+mq(gt-sm){
 		&--affix{
 			position: fixed;
-			padding-top: 12px;
+			padding-top: 0;
 			padding-bottom: @padding-top;
-			background-color: $color_brand;
+			background-color: rgba($color_brand, .92);
 			box-shadow: 0 1px 3px rgba($color_black, .1);
 		}
 	}
@@ -25,20 +26,15 @@
 	}
 	&__{
 		&brand{
-			font-size: $size_md;
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: 45px;
-			line-height: 0;
+			font-size: 0;
+			margin-right: 30px;			
 		}
 		&logo{
-			box(150px, 42px);
-			background: url(../images/brand/mechetronz-white.svg) no-repeat;
-			background-size: contain;
-			overflow: hidden;
-			text-indent: 100%;
-			display: inline-block;
-			//margin-bottom: -6px;
+			box(144px, 100%);					   
+		    background: url(../images/brand/mechetronz-white.svg) no-repeat;
+		    background-size: contain;
+		    background-position: center;		    
+		    display: block;
 		}
 		&container{
 			display: flex;			
@@ -53,11 +49,7 @@
 			[href^="tel"],
 			[href^="mailto"]{
 				display: inline-block;
-				vertical-align: middle;				
-
-				&:before{
-					opacity: .75;
-				}
+				vertical-align: middle;
 			}
 		}
 	}
