@@ -27,10 +27,10 @@
             z-index: @z-index + 2;
             min-height: 500px;
             text-shadow: 1px 1px 2px rgba($color_black,.1);
-            
+
             +mq(gt-md){
                 padding-top: 240px;
-            }            
+            }
         }
         &title{
             font-size: $size_h1;
@@ -39,7 +39,7 @@
             font-weight: $weight_bold;
 
             +mq(gt-md){
-                font-size: 72px;                
+                font-size: 72px;
             }
         }
         &quote{
@@ -73,6 +73,17 @@
             font-size: $size_lg;
             margin-top: 21px;
             display: inline-block;
+            border: 2px solid;
+            border-radius: 2px;
+            padding: 12px 30px;
+
+            &:hover{
+                background-color: $color_brand;
+            }
+            +mq(gt-md){
+                padding: 18px 42px;
+                font-size: $size_xl;
+            }
         }
     }
     a{

@@ -1,6 +1,5 @@
 .me-{$footer}{
-	padding: 60px 0 90px;
-	font-size: $size_sm;
+	padding: 60px 0 90px;	
 	position: relative;
 	background-color: $color_base;
 	color: $color_white;
@@ -12,6 +11,7 @@
     
     +mq(gt-md){
         padding: 150px 0;
+        font-size: $size_sm;
     }
 	&:before{
         content: '';
@@ -43,6 +43,11 @@
                 margin-top: 42px;
             }
     	}
+        &logo{
+            +mq(md){
+                width: 180px;
+            }
+        }   
     }
     & address{
     	position: relative;

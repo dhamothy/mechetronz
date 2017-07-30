@@ -5,7 +5,6 @@
 			box-shadow: 1px 1px 4px rgba($color_black, 0.24);
 		    border-radius: 2px;
 	    }
-
 	    & ul{
 	    	+mq(gt-sm){
 	    		display: flex;
@@ -19,6 +18,13 @@
 		    			flex-direction: row-reverse;
 		    		}
 		    	}
+	    	}
+	    }
+	    &--alt{
+	    	^[0]{
+	    		+mq(gt-md){
+					height: 360px;
+				}
 	    	}
 	    }
     }
@@ -36,7 +42,7 @@
 	}
 	&__{
 		&content{
-			flex: 1;			
+			flex: 1;
 			position: relative;
 
 			>div{
@@ -57,7 +63,7 @@
 				left: 100%;
     			z-index: 10;
     			margin: auto;
-    			
+
     			+mq(sm){
 					display: none;
     			}
