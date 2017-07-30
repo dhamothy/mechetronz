@@ -612,6 +612,7 @@ a[href^="mailto"]:before {
   border: 2px solid;
   border-radius: 2px;
   padding: 12px 30px;
+  font-weight: 600;
 }
 .me-banner__launch:hover {
   background-color: #fdb302;
