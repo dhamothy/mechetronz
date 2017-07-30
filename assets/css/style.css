@@ -322,6 +322,11 @@ a[href^="mailto"]:before {
     padding: 39px 60px;
   }
 }
+@media (max-width: 1199px) {
+  .me-header {
+    font-size: 14px;
+  }
+}
 @media (min-width: 1000px) {
   .me-header--affix {
     position: fixed;
