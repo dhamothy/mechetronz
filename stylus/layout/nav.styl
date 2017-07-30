@@ -1,9 +1,10 @@
 .me-{$nav}{
 	
 	>li{
-		display: inline-block;
-		vertical-align: top;
-
+		+mq(gt-md){
+			display: inline-block;
+			vertical-align: top;
+		}
 		>a{
 			padding: 0 9px;
 			display: inline-block;

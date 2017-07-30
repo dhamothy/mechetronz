@@ -1,15 +1,18 @@
 .me-{$footer}{
-	padding: 150px 0;
+	padding: 60px 0 90px;
 	font-size: $size_sm;
 	position: relative;
 	background-color: $color_base;
 	color: $color_white;
 	background-image: url(../images/wide/section-footer.jpg);
 	background-repeat: no-repeat;
-	background-position: center bottom;	
+	background-position: center bottom;
 	background-size: cover;
 	clearfix();
-
+    
+    +mq(gt-md){
+        padding: 150px 0;
+    }
 	&:before{
         content: '';
         position: absolute;
@@ -27,20 +30,30 @@
     &__{
     	&row{
     		display: flex;
+
+            +mq(md){
+                flex-direction: column-reverse;
+
+            }
     	}
     	&col{
     		flex: 1;
+
+            +mq(md){
+                margin-top: 42px;
+            }
     	}
     }
     & address{
     	position: relative;
         line-height: 1.8;
-    	
+        padding-left: 18px;
+
     	&:before{
     		content: "";
     		display: inline-block;
     		position: absolute;
-    		left: -24px;
+    		left: -3px;
     		box(18px);
     		background: url(../images/icon/map-white.svg) no-repeat center;
     		background-size: contain;

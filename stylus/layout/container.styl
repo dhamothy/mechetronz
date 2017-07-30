@@ -1,9 +1,9 @@
 .me-{$container}{
-    max-width: $container-width;
+    max-width: $container_width;
+    padding-left: $container_gutter;
+    padding-right: $container_gutter
     margin-left: auto;
     margin-right: auto;
-    padding-left: $container-padding;
-    padding-right: $container-padding
     position: relative;
     z-index: 89;
     clearfix();
@@ -37,7 +37,11 @@
 			background-attachment: fixed;
 			background-size: cover;
 			display: block;
-			min-height: 80vh;
+			min-height: 60vh;
+			
+			+mq(gt-md){
+				min-height: 80vh;
+			}
 
 			&:before{
 		        content: '';
@@ -50,10 +54,14 @@
 		        background-color: rgba($color_black, .5);
 		        display: block;
 		    }
-		    
+
 		    .me-{$section}__title{
-		    	font-size: $size_lg;
-		    	margin-top: 20vh;		    	
+		    	font-size: $size_h2;
+		    	margin-top: 10vh;
+		    	
+		    	+mq(gt-md){
+		    		margin-top: 20vh;
+		    	}
 		    }
 		}
 	}
