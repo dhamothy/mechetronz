@@ -14,7 +14,7 @@ html {
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Helvetica Neue, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -442,7 +442,7 @@ a[href^="mailto"]:before {
   display: inline-block;
 }
 .me-footer {
-  padding: 60px 0 90px;
+  padding: 60px 0 120px;
   position: relative;
   background-color: #222;
   color: #fff;
@@ -634,6 +634,7 @@ a[href^="mailto"]:before {
     background: #fff;
     box-shadow: 1px 1px 4px rgba(0,0,0,0.24);
     border-radius: 2px;
+    font-size: 14px;
   }
 }
 @media (min-width: 800px) {
@@ -674,7 +675,7 @@ a[href^="mailto"]:before {
     background: #fff;
     box-shadow: 1px 1px 4px rgba(0,0,0,0.24);
     border-radius: 2px;
-    margin-bottom: 30px;
+    margin: 0 -15px 30px;
   }
 }
 .me-product__content {
