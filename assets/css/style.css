@@ -653,8 +653,8 @@ a[href^="mailto"]:before {
             flex-direction: row-reverse;
   }
 }
-@media (min-width: 1000px) {
-  .me-product {
+@media (min-width: 800px) {
+  .me-products--alt .me-product {
     height: 360px;
   }
 }
