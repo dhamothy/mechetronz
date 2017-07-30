@@ -73,13 +73,15 @@
             font-size: $size_lg;
             margin-top: 21px;
             display: inline-block;
-            border: 2px solid;
+            border: 2px solid $color_white;
             border-radius: 2px;
             padding: 12px 30px;
             font-weight: $weight_bold;
+            transition: .2s;
 
             &:hover{
-                background-color: $color_brand;
+                color: $color_brand;
+                background-color: $color_white;
             }
             +mq(gt-md){
                 padding: 18px 42px;

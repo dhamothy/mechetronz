@@ -609,13 +609,16 @@ a[href^="mailto"]:before {
   font-size: 18px;
   margin-top: 21px;
   display: inline-block;
-  border: 2px solid;
+  border: 2px solid #fff;
   border-radius: 2px;
   padding: 12px 30px;
   font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .me-banner__launch:hover {
-  background-color: #fdb302;
+  color: #fdb302;
+  background-color: #fff;
 }
 @media (min-width: 1000px) {
   .me-banner__launch {
